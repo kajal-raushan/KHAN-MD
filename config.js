@@ -2,7 +2,7 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
-    return text === fault ? true : true;
+    return text === fault ? true : false;
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "KHAN-MD~n3gjkApQ#3CZQ_VfkBZGzNl3KPJPOFb9Z5NkgtMHKeFkjY6Ck_UE",
@@ -19,7 +19,7 @@ PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
 BOT_NAME: process.env.BOT_NAME || "KHAN-MD",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "R K Bhãí",
+STICKER_NAME: process.env.STICKER_NAME || "KHAN-MD",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "true",
 // make this true for custum emoji react    
